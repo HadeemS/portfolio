@@ -1,0 +1,352 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadeem Secka - Portfolio</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header styles */
+        header {
+            background: #090909;
+            color: rgb(242, 242, 245);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            border: 3px solid white;
+        }
+
+        /* Navigation */
+        nav {
+            background: #090909;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #5f6366;
+        }
+
+        /* Main content */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            color: #090909;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #5f6366;
+            padding-bottom: 0.5rem;
+        }
+
+        /* Projects grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            border: 1px solid #050505;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-info {
+            padding: 1rem;
+        }
+
+        /* Skills */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .skill-tag {
+            background: #0c0c0c;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Contact form */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            background: #030303;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #2980b9;
+        }
+
+        /* Footer */
+        footer {
+            background: #0b0b0b;
+            color: rgb(246, 246, 247);
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="C:\Users\Hadeem\OneDrive\Desktop\PersonalWebsitePortfolio\ProfilePic.jpg" alt="Profile Picture" class="profile-img">
+        <h1>Hadeem Secka</h1>
+        <p>Software Engineer & Web Developer</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#Campus Involvment">Campus Involvment</a></li>
+            <li><a href="#skills">Skills</a></li>
+        
+            <!-- <li><a href="#contact">Contact</a></li> -->
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am Hadeem Secka, a dedicated Computer Information Science major with a minor in Business Analytics at the University of South Carolina, set to graduate in May 2027. My academic journey has given me a comprehensive understanding of programming, data analysis, and cybersecurity fundamentals, with a focus on solving complex problems through technology. Courses like Algorithmic Design, Linux Fundamentals, and Intro to Computer Security have laid the groundwork for my technical expertise, especially in Java and Python. Beyond academics, my role as an Executive Board Member in Minorities in Computing has provided valuable leadership experience and taught me the importance of collaboration in driving success. I am enthusiastic about using my skills to make a meaningful impact in the tech industry, especially in areas like IT security, data analytics, and software development.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="C:\Users\Hadeem\OneDrive\Desktop\PersonalWebsitePortfolio\ZodiacSign.jpg" alt="What Is Your Zodiac Project">
+                    <div class="project-info">
+                        <h3>What Is Your Zodiac Project</h3>
+                        <p>With my Zodiac Sign Finder program, you’ll be able to discover your zodiac sign with just a couple of quick inputs! Here’s how it works and what makes it a fun tool: Imagine you’re curious to find out your zodiac sign or just want to confirm it with a personalized program. All you have to do is enter the month and day of your birthday. The program then jumps into action, checking if your input is correct and matching it with the zodiac date ranges.</p>
+                    </div>
+                    <section id="zodiac-form">
+                        <h2>Find Your Zodiac Sign</h2>
+                        <form id="zodiacSignForm">
+                            <div class="form-group">
+                                <label for="month">Enter Month:</label>
+                                <input type="number" id="month" name="month" min="1" max="12" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="day">Enter Day:</label>
+                                <input type="number" id="day" name="day" min="1" max="31" required>
+                            </div>
+                            <button type="submit">Find My Sign</button>
+                        </form>
+                        <p id="result"></p>
+                    </section>
+                    <script>
+                        document.getElementById('zodiacSignForm').addEventListener('submit', async function(e) {
+                            e.preventDefault();
+                            const month = document.getElementById('month').value;
+                            const day = document.getElementById('day').value;
+
+                            const response = await fetch('http://localhost:3001/zodiac-sign', { // Ensure this matches the server URL
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json'
+                                },
+                                body: JSON.stringify({ month, day })
+                            });
+                            
+                            const result = await response.json();
+                            document.getElementById('result').textContent = `Your zodiac sign is: ${result.sign}`;
+                        });
+                    </script>
+                </div>
+
+                <div class="project-card">
+                    <img src="C:\Users\Hadeem\OneDrive\Desktop\PersonalWebsitePortfolio\BlockPick.webp" alt="Project 2">
+                    <div class="project-info">
+                        <h3>Stay Alive</h3>
+                        <p>Your mission is simple: dodge the potholes and keep going as long as you can.</p>
+                        <!-- Other HTML content above -->
+
+<section id="pothole-game">
+    <h2>Pothole Driving Game</h2>
+    <canvas id="gameCanvas" width="600" height="400" style="border:1px solid #000;"></canvas>
+    <p id="gameStatus"></p>
+    <button onclick="startGame()">Start Game</button>
+</section>
+
+<script>
+    // JavaScript for Pothole Driving Game
+
+    function startGame() {
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Player properties
+        let player = { x: 50, y: canvas.height - 30, width: 20, height: 20 };
+        let potholes = [];
+        let gameRunning = true;
+
+        // Update game frame
+        function updateGame() {
+            if (!gameRunning) return;
+
+            // Clear canvas and redraw player
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = 'blue';
+            ctx.fillRect(player.x, player.y, player.width, player.height);
+
+            // Draw potholes and check for collisions
+            potholes.forEach(pothole => {
+                ctx.fillStyle = 'brown';
+                ctx.fillRect(pothole.x, pothole.y, 30, 10);
+                pothole.y += 2;  // Move pothole down
+                if (pothole.y > canvas.height) pothole.y = -10;  // Reset pothole position if it goes out of view
+                if (detectCollision(player, pothole)) {
+                    gameRunning = false;
+                    document.getElementById('gameStatus').textContent = 'Game Over!';
+                }
+            });
+
+            if (gameRunning) requestAnimationFrame(updateGame);
+        }
+
+        // Collision detection function
+        function detectCollision(rect1, rect2) {
+            return rect1.x < rect2.x + 30 &&
+                   rect1.x + rect1.width > rect2.x &&
+                   rect1.y < rect2.y + 10 &&
+                   rect1.y + rect1.height > rect2.y;
+        }
+
+        // Move player with arrow keys
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft' && player.x > 0) player.x -= 10;
+            if (e.key === 'ArrowRight' && player.x < canvas.width - player.width) player.x += 10;
+        });
+
+        // Add initial potholes
+        potholes.push({ x: 200, y: 0 });
+        potholes.push({ x: 400, y: -100 });
+
+        // Start the game loop
+        updateGame();
+    }
+</script>
+
+</body>
+</html>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section id="Campus Involvment">
+        <h2>Campus Involvment</h2>
+        <p>My campus involvement demonstrates my strong commitment to both academic and extracurricular activities, showcasing my leadership and teamwork skills. As an executive board member and secretary for the Minorities in Computing club since August 2023, I have played a pivotal role in recruiting new members by actively engaging with students at the student center. This involves explaining the club’s purpose and benefits, which helps in fostering a diverse and inclusive community within the computing field. Additionally, I am responsible for taking detailed notes during meetings, ensuring that all discussions and decisions are accurately recorded. This role also includes managing club merchandise, which requires organizational skills and attention to detail.
+
+            Beyond my leadership role in the club, I am also actively involved in intramural sports, participating in weekly soccer and basketball games since August 2022.</p>
+    </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Software Applications</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Node.js</span>
+            </div>
+        </section>
+
+        <!-- Uncomment to enable contact form
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
