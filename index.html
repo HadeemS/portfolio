@@ -223,6 +223,26 @@
                         <p id="result"></p>
                     </section>
                     <script>
+                             // Zodiac Sign Finder Script
+        document.getElementById('zodiacSignForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const month = document.getElementById('month').value;
+            const day = document.getElementById('day').value;
+
+            // Fetch zodiac sign (Replace this with your actual server fetch if needed)
+            const zodiacSign = getZodiacSign(month, day);
+            document.getElementById('result').textContent = `Your zodiac sign is: ${zodiacSign}`;
+
+            // Local Zodiac Sign Calculation
+            function getZodiacSign(month, day) {
+                const signs = [
+                    "Capricorn", "Aquarius", "Pisces", "Aries", "Taurus", "Gemini",
+                    "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius"
+                ];
+                const cutoffDays = [20, 18, 20, 19, 20, 20, 22, 22, 22, 22, 21, 21];
+                return (day < cutoffDays[month - 1]) ? signs[month - 1] : signs[month % 12];
+            }
+        });
                         document.getElementById('zodiacSignForm').addEventListener('submit', async function(e) {
                             e.preventDefault();
                             const month = document.getElementById('month').value;
